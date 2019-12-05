@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/pagestyle.css";
+import profileImage from "../images/about.jpg";
 
 
 
 class Profile extends Component {
+    
+    
     render() {
         return (
             <body>
@@ -14,7 +17,12 @@ class Profile extends Component {
                         <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
 
                             <div class="text-center">
-                                <div class="author-img" style={{ backgroundImage: "url(../images/about.jpg);" }}></div>
+
+                            
+                            <img class="author-img" src={require('../images/about.jpg')} />
+                                {/* <div class="author-img" style={{ backgroundImage: "url(" + { profileImage } + ")" }}></div> */}
+
+
                                 <h1 id="colorlib-logo"><a href="/profile">Julian Ayllon</a></h1>
                                 {/* <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span> */}
                             </div>
