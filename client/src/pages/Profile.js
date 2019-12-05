@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../css/pagestyle.css";
+
 
 
 class Profile extends Component {
@@ -7,16 +9,16 @@ class Profile extends Component {
         return (
             <body>
 
-                <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+                <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
 
                     <div class="text-center">
-                        <div class="author-img" style="background-image: url(images/about.jpg);"></div>
+                        <div className="author-img" style={{backgroundImage: "url(../images/about.jpg);"}}></div>
                         <h1 id="colorlib-logo"><a href="index.html">Julian Ayllon</a></h1>
                         {/* <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span> */}
                     </div>
 
                     <nav id="colorlib-main-menu" role="navigation" class="navbar">
-                        <div id="navbar" class="collapse">
+                        <div id="navbar" className="collapse">
                             <ul>
                                 <li><Link to="#" data-nav-section="images">Images</Link></li>
                                 <li><Link to="#" data-nav-section="about">About</Link></li>
@@ -29,7 +31,7 @@ class Profile extends Component {
                         </div>
                     </nav>
 
-                    <div class="colorlib-footer">
+                    <div className="colorlib-footer">
                         {/* <p>
                             <a href="https://github.com/cusco1982" style="color:black" target="_blank">Check out my
 							GitHub!</a>
