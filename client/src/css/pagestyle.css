@@ -94,7 +94,8 @@
         transform: translateX(-300px);
         padding-top: 4em; } }
     #colorlib-aside .author-img {
-      width: 150px;
+      transform: translate(80px, 0px);
+      width: 140.1px;
       height: 150px;
       margin: 0 auto;
       margin-bottom: 30px;
