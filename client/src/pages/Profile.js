@@ -22,6 +22,7 @@ class Profile extends Component {
                             <ul>
                                 <li><Link to="#" data-nav-section="images">Images</Link></li>
                                 <li><Link to="#" data-nav-section="about">About</Link></li>
+                                <li><Link to="/" >Main</Link></li>
                                 {/* <li><a href="#" data-nav-section="about">About</a></li>
                                 <li><a href="#" data-nav-section="services">Projects</a></li>
                                 <li><a href="#" data-nav-section="skills">Skills</a></li>
@@ -38,7 +39,7 @@ class Profile extends Component {
                         </p> */}
                         <ul>
                             <li>
-                                <Link className="facebook-logo" to="https://www.facebook.com/hooleean28">FB</Link>
+                                <Link className="icon-facebook2" to="https://www.facebook.com/hooleean28">FB</Link>
                             </li>
                             <li>
                                 <Link className="twitter-logo" to="https://twitter.com/hooleean28">Twitter</Link>
