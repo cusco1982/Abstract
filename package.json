@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-router-dom": "^5.1.2"
   },
   "bugs": {
     "url": "https://github.com/cusco1982/Abstract/issues"
