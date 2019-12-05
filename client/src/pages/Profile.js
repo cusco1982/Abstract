@@ -8,18 +8,18 @@ class Profile extends Component {
             <body>
 
                 <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+
                     <div class="text-center">
                         <div class="author-img" style="background-image: url(images/about.jpg);"></div>
                         <h1 id="colorlib-logo"><a href="index.html">Julian Ayllon</a></h1>
                         <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span>
                     </div>
+
                     <nav id="colorlib-main-menu" role="navigation" class="navbar">
                         <div id="navbar" class="collapse">
                             <ul>
                                 <li><Link to="#" data-nav-section="images">Images</Link></li>
                                 <li><Link to="#" data-nav-section="about">About</Link></li>
-
-
                                 {/* <li><a href="#" data-nav-section="about">About</a></li>
                                 <li><a href="#" data-nav-section="services">Projects</a></li>
                                 <li><a href="#" data-nav-section="skills">Skills</a></li>
@@ -36,16 +36,16 @@ class Profile extends Component {
                         </p> */}
                         <ul>
                             <li>
-                                <Link className="main-link" to="https://www.facebook.com/hooleean28">FB</Link>
+                                <Link className="facebook-logo" to="https://www.facebook.com/hooleean28">FB</Link>
                             </li>
                             <li>
-                                <Link className="main-link" to="https://twitter.com/hooleean28">Twitter</Link>
+                                <Link className="twitter-logo" to="https://twitter.com/hooleean28">Twitter</Link>
                             </li>
                             <li>
-                                <Link className="main-link" to="https://www.instagram.com/hooleean28">iG</Link>
+                                <Link className="instagram-logo" to="https://www.instagram.com/hooleean28">iG</Link>
                             </li>
                             <li>
-                                <Link className="main-link" to="www.linkedin.com/in/julian-ayllon">linkedIn</Link>
+                                <Link className="linkedin-logo" to="www.linkedin.com/in/julian-ayllon">linkedIn</Link>
                             </li>
 
 
