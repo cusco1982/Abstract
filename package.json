@@ -1,0 +1,21 @@
+{
+  "name": "Abstract",
+  "version": "1.0.0",
+  "description": "Art Profile Page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cusco1982/Abstract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cusco1982/Abstract/issues"
+  },
+  "homepage": "https://github.com/cusco1982/Abstract#readme"
+}
