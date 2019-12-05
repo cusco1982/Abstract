@@ -8,51 +8,53 @@ class Profile extends Component {
     render() {
         return (
             <body>
+                <div id="colorlib-page">
+                    <div class="container-wrap">
 
-                <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
+                        <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
 
-                    <div class="text-center">
-                        <div className="author-img" style={{backgroundImage: "url(../images/about.jpg);"}}></div>
-                        <h1 id="colorlib-logo"><a href="index.html">Julian Ayllon</a></h1>
-                        {/* <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span> */}
-                    </div>
+                            <div class="text-center">
+                                <div class="author-img" style={{ backgroundImage: "url(../images/about.jpg);" }}></div>
+                                <h1 id="colorlib-logo"><a href="/profile">Julian Ayllon</a></h1>
+                                {/* <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span> */}
+                            </div>
 
-                    <nav id="colorlib-main-menu" role="navigation" class="navbar">
-                        <div id="navbar" className="collapse">
-                            <ul>
-                                <li><Link to="#" data-nav-section="images">Images</Link></li>
-                                <li><Link to="#" data-nav-section="about">About</Link></li>
-                                <li><Link to="/" >Main</Link></li>
-                                {/* <li><a href="#" data-nav-section="about">About</a></li>
+                            <nav id="colorlib-main-menu" role="navigation" className="navbar">
+                                <div id="navbar" className="collapse">
+                                    <ul>
+                                        <li><Link to="#" data-nav-section="images">Images</Link></li>
+                                        <li><Link to="#" data-nav-section="about">About</Link></li>
+                                        <li><Link to="/">Main</Link></li>
+                                        {/* <li><a href="#" data-nav-section="about">About</a></li>
                                 <li><a href="#" data-nav-section="services">Projects</a></li>
                                 <li><a href="#" data-nav-section="skills">Skills</a></li>
                                 <li><a href="#" data-nav-section="education">Education</a></li>
                                 <li><a href="#" data-nav-section="contact">Contact</a></li> */}
-                            </ul>
-                        </div>
-                    </nav>
+                                    </ul>
+                                </div>
+                            </nav>
 
-                    <div className="colorlib-footer">
-                        {/* <p>
+                            <div className="colorlib-footer">
+                                {/* <p>
                             <a href="https://github.com/cusco1982" style="color:black" target="_blank">Check out my
 							GitHub!</a>
                         </p> */}
-                        <ul>
-                            <li>
-                                <Link className="icon-facebook2" to="https://www.facebook.com/hooleean28">FB</Link>
-                            </li>
-                            <li>
-                                <Link className="twitter-logo" to="https://twitter.com/hooleean28">Twitter</Link>
-                            </li>
-                            <li>
-                                <Link className="instagram-logo" to="https://www.instagram.com/hooleean28">iG</Link>
-                            </li>
-                            <li>
-                                <Link className="linkedin-logo" to="www.linkedin.com/in/julian-ayllon">linkedIn</Link>
-                            </li>
+                                <ul>
+                                    <li>
+                                        <a className="icon-facebook2" href="https://www.facebook.com/hooleean28" target="_blank" rel="noopener noreferrer">FB</a>
+                                    </li>
+                                    <li>
+                                        <a className="twitter-logo" href="https://twitter.com/hooleean28" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <a className="instagram-logo" href="https://www.instagram.com/hooleean28" target="_blank" rel="noopener noreferrer">iG</a>
+                                    </li>
+                                    <li>
+                                        <a className="linkedin-logo" href="https://www.linkedin.com/in/julian-ayllon" target="_blank" rel="noopener noreferrer">linkedIn</a>
+                                    </li>
 
 
-                            {/* <li><a href="https://www.facebook.com/hooleean28" target="_blank"><i class="icon-facebook2"
+                                    {/* <li><a href="https://www.facebook.com/hooleean28" target="_blank"><i class="icon-facebook2"
                                 style="color:black"></i></a></li>
                             <li><a href="https://twitter.com/hooleean28" target="_blank"><i class="icon-twitter2"
                                 style="color:black"></i></a></li>
@@ -60,14 +62,16 @@ class Profile extends Component {
                                 style="color:black"></i></a></li>
                             <li><a href="www.linkedin.com/in/julian-ayllon" target="_blank"><i class="icon-linkedin2"
                                 style="color:black"></i></a></li> */}
-                        </ul>
+                                </ul>
+                            </div>
+
+                        </aside>
+
+
+                        {/*  <Link className="main-link" to="/">Main</Link>  */}
+
                     </div>
-
-                </aside>
-
-
-                {/*  <Link className="main-link" to="/">Main</Link>  */}
-
+                </div>
 
             </body>
 
