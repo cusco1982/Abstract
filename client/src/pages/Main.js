@@ -10,9 +10,9 @@ class Main extends Component {
                 <h1>main page</h1>
 
 
-                <p>
-                    No Account? <Link className="profile-link" to="/profile">Profile</Link>
-                </p>
+
+                <Link className="profile-link" to="/profile">Profile</Link>
+
 
             </div>
 

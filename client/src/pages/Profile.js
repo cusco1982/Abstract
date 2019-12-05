@@ -9,9 +9,9 @@ class Profile extends Component {
 
                 <h1>profile page</h1>
 
-                <p>
-                    No Account? <Link className="main-link" to="/">Main</Link>
-                </p>
+            
+                    <Link className="main-link" to="/">Main</Link>
+            
 
             </div>
 
