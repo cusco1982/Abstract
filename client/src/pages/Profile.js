@@ -12,7 +12,7 @@ class Profile extends Component {
                     <div class="text-center">
                         <div class="author-img" style="background-image: url(images/about.jpg);"></div>
                         <h1 id="colorlib-logo"><a href="index.html">Julian Ayllon</a></h1>
-                        <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span>
+                        {/* <span class="position"><a href="#">Full Stack Web Developer</a><br /> in New Jersey</span> */}
                     </div>
 
                     <nav id="colorlib-main-menu" role="navigation" class="navbar">
