@@ -39,18 +39,18 @@ class Profile extends Component {
                             <a href="https://github.com/cusco1982" style="color:black" target="_blank">Check out my
 							GitHub!</a>
                         </p> */}
-                                <ul>
+                                <ul>            
                                     <li>
-                                        <a className="icon-facebook2" href="https://www.facebook.com/hooleean28" target="_blank" rel="noopener noreferrer">FB</a>
+                                        <a className="icon-facebook2" style={{color:"black"}} href="https://www.facebook.com/hooleean28" target="_blank" rel="noopener noreferrer">FB</a>
                                     </li>
                                     <li>
-                                        <a className="twitter-logo" href="https://twitter.com/hooleean28" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                        <a className="twitter-logo" style={{color:"black"}} href="https://twitter.com/hooleean28" target="_blank" rel="noopener noreferrer">Twitter</a>
                                     </li>
                                     <li>
-                                        <a className="instagram-logo" href="https://www.instagram.com/hooleean28" target="_blank" rel="noopener noreferrer">iG</a>
+                                        <a className="instagram-logo" style={{color:"black"}} href="https://www.instagram.com/hooleean28" target="_blank" rel="noopener noreferrer">iG</a>
                                     </li>
                                     <li>
-                                        <a className="linkedin-logo" href="https://www.linkedin.com/in/julian-ayllon" target="_blank" rel="noopener noreferrer">linkedIn</a>
+                                        <a className="linkedin-logo" style={{color:"black"}} href="https://www.linkedin.com/in/julian-ayllon" target="_blank" rel="noopener noreferrer">linkedIn</a>
                                     </li>
 
 
