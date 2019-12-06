@@ -14,7 +14,7 @@ class Profile extends Component {
                 <div id="colorlib-page">
                     <div class="container-wrap">
 
-                        <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
+                        <aside id="colorlib-aside" role="complementary" className="border ">
 
                             <div class="text-center">
 
