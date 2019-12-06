@@ -1,13 +1,48 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/pagestyle.css";
-import profileImage from "../images/about.jpg";
+// import profileImage from "../images/about.jpg";
+import ProjectCard from "../components/ProjectCard";
+import image1 from '../images/about.jpg';
 
+
+const API = {
+    getAppart: () => {
+      return ([{
+        image: image1,
+        title: "New Appartment"
+    }])
+}
+}
+
+    
 
 
 class Profile extends Component {
+
+    state = {
+        appartments: [],
     
+      };
+
+      componentDidMount() {
+        this.loadAppart();
+      }
     
+      loadAppart = () => {
+        // API.getAppart()
+        // .then(res =>
+        //   this.setState({ appartments: res.data })
+        // )
+        // .catch(err => console.log(err));
+    
+        const appartments = API.getAppart()
+    
+        this.setState({ appartments: appartments })
+    
+      };
+
+
     render() {
         return (
             <body>
@@ -18,8 +53,8 @@ class Profile extends Component {
 
                             <div class="text-center">
 
-                            
-                            <img class="author-img" src={require('../images/about.jpg')} />
+
+                                <img class="author-img" src={require('../images/about.jpg')} />
                                 {/* <div class="author-img" style={{ backgroundImage: "url(" + { profileImage } + ")" }}></div> */}
 
 
@@ -47,18 +82,18 @@ class Profile extends Component {
                             <a href="https://github.com/cusco1982" style="color:black" target="_blank">Check out my
 							GitHub!</a>
                         </p> */}
-                                <ul>            
+                                <ul>
                                     <li>
-                                        <a className="icon-facebook2" style={{color:"black"}} href="https://www.facebook.com/hooleean28" target="_blank" rel="noopener noreferrer">FB</a>
+                                        <a className="icon-facebook2" style={{ color: "black" }} href="https://www.facebook.com/hooleean28" target="_blank" rel="noopener noreferrer">FB</a>
                                     </li>
                                     <li>
-                                        <a className="twitter-logo" style={{color:"black"}} href="https://twitter.com/hooleean28" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                        <a className="twitter-logo" style={{ color: "black" }} href="https://twitter.com/hooleean28" target="_blank" rel="noopener noreferrer">Twitter</a>
                                     </li>
                                     <li>
-                                        <a className="instagram-logo" style={{color:"black"}} href="https://www.instagram.com/hooleean28" target="_blank" rel="noopener noreferrer">iG</a>
+                                        <a className="instagram-logo" style={{ color: "black" }} href="https://www.instagram.com/hooleean28" target="_blank" rel="noopener noreferrer">iG</a>
                                     </li>
                                     <li>
-                                        <a className="linkedin-logo" style={{color:"black"}} href="https://www.linkedin.com/in/julian-ayllon" target="_blank" rel="noopener noreferrer">linkedIn</a>
+                                        <a className="linkedin-logo" style={{ color: "black" }} href="https://www.linkedin.com/in/julian-ayllon" target="_blank" rel="noopener noreferrer">linkedIn</a>
                                     </li>
 
 
@@ -80,6 +115,23 @@ class Profile extends Component {
 
                     </div>
                 </div>
+
+
+
+
+                <div className="col-sm-8">
+
+                    {this.state.appartments.map(appartment => {
+                        return <ProjectCard image={appartment.image}
+                         title={appartment.title} open={this.open}
+                          />
+
+                    })}
+
+                </div>
+
+
+
 
             </body>
 
