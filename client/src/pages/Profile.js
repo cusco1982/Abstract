@@ -140,7 +140,7 @@ class Profile extends Component {
 
 
 
-                <div className="col" id="image-container">
+                <div className="row" id="image-container">
 
                     {this.state.appartments.map(appartment => {
                         return <ProjectCard image={appartment.image}
