@@ -8,39 +8,60 @@ import image1 from '../images/about.jpg';
 
 const API = {
     getAppart: () => {
-      return ([{
-        image: image1,
-        title: "New Appartment"
-    }])
-}
+        return ([{
+            image: image1,
+            title: "New Appartment"
+        },
+        {
+            image: image1,
+            title: "New Appartment"
+        },
+        {
+            image: image1,
+            title: "New Appartment"
+        },
+        {
+            image: image1,
+            title: "New Appartment"
+        },
+        {
+            image: image1,
+            title: "New Appartment"
+        },
+        {
+            image: image1,
+            title: "New Appartment"
+
+        }])
+    }
 }
 
-    
+
 
 
 class Profile extends Component {
 
     state = {
         appartments: [],
-    
-      };
 
-      componentDidMount() {
+    };
+
+    componentDidMount() {
         this.loadAppart();
-      }
-    
-      loadAppart = () => {
+    }
+
+    loadAppart = () => {
         // API.getAppart()
         // .then(res =>
         //   this.setState({ appartments: res.data })
         // )
         // .catch(err => console.log(err));
-    
+
         const appartments = API.getAppart()
-    
+
         this.setState({ appartments: appartments })
-    
-      };
+
+    };
 
 
     render() {
@@ -119,12 +140,12 @@ class Profile extends Component {
 
 
 
-                <div className="col-sm-8">
+                <div className="col" id="image-container">
 
                     {this.state.appartments.map(appartment => {
                         return <ProjectCard image={appartment.image}
-                         title={appartment.title} open={this.open}
-                          />
+                            title={appartment.title} open={this.open}
+                        />
 
                     })}
 
