@@ -1,3 +1,11 @@
+#image-container {
+    float: left;
+    transform: translate(700px,100px);
+
+}
+
+
+
 @font-face {
     font-family: 'icomoon';
     /* src: url("../fonts/icomoon/icomoon.eot?srf3rx"); */
@@ -20,6 +28,7 @@
     @media screen and (max-width: 992px) {
       body {
         font-size: 16px; } }
+
   
   a {
     color: #2c98f0;
