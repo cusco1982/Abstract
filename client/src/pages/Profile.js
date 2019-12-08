@@ -140,16 +140,19 @@ class Profile extends Component {
 
 
 
-                <div className="row container" id="image-container">
+                <div className="right-side-container">
+                    <div id="image-container">
 
-                    {this.state.appartments.map(appartment => {
-                        return <ProjectCard image={appartment.image}
-                            title={appartment.title} open={this.open}
-                        />
+                        {this.state.appartments.map(appartment => {
+                            return <ProjectCard image={appartment.image}
+                                title={appartment.title} open={this.open}
+                            />
 
-                    })}
+                        })}
 
+                    </div>
                 </div>
+
 
 
 
