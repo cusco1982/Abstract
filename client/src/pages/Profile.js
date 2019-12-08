@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/pagestyle.css";
 // import profileImage from "../images/about.jpg";
+import Modal from 'react-bootstrap/Modal'
+
+
+
+
 import ProjectCard from "../components/ProjectCard";
 import image1 from '../images/about.jpg';
 
@@ -43,12 +48,30 @@ class Profile extends Component {
 
     state = {
         appartments: [],
+        showModal: false,
+        catchid: ""
+
 
     };
 
     componentDidMount() {
         this.loadAppart();
     }
+
+    open = (id) => {
+        this.setState({ showModal: true, catchid: id });
+
+    }
+
+    close = (event) => {
+        if (event) event.preventDefault();
+        this.setState({ showModal: false });
+    }
+
+
+
+
+
 
     loadAppart = () => {
         // API.getAppart()
@@ -143,13 +166,40 @@ class Profile extends Component {
                 <div className="right-side-container">
 
                     <div id="image-container">
-                        {this.state.appartments.map(appartment => {
-                            return <ProjectCard image={appartment.image}
-                                title={appartment.title} open={this.open}
-                            />
+                        <div className="image">
+                            {this.state.appartments.map(appartment => {
+                                return <ProjectCard image={appartment.image}
+                                    title={appartment.title} open={this.open}
+                                />
 
-                        })}
+                            })}
+                        </div>
+
+
+                        <Modal
+                            size="lg"
+                            show={this.state.showModal} onHide={this.close}
+                            aria-labelledby="example-modal-sizes-title-lg">
+                            <Modal.Header closeButton>
+                                {this.state.appartments.filter(appartment => {
+                                    console.log(appartment)
+                                    return appartment._id === this.state.catchid
+                                }).map((appartment) => {
+                                    return <Modal.Title id="example-modal-sizes-title-lg">
+                                        {appartment.image}
+                                    </Modal.Title>
+                                })}
+                            </Modal.Header>
+                            
+                            <Modal.Body>
+
+
+                            </Modal.Body>
+                        </Modal>
+
                     </div>
+
+
 
                     <div className="about-me">
                         <h1>About me</h1>
