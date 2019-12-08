@@ -7,7 +7,7 @@ function ProjectCard(props) {
     return (
         <div className="col" style={{float: 'right'}}>
             <div className="animated fadeInUp delay-1s" style={{cursor:"pointer"}}>
-                <img style={{height:"500px", width:"400px", paddingBottom:"125px"}} src={props.image} className="card-img-top" alt="image" />
+                <img style={{height:"500px", width:"400px", paddingBottom:"100px", paddingRight:"50px"}} src={props.image} className="card-img-top" alt="image" />
 
                 {/* <div className="card-body">
                     <h3 className="tool-tip inner">{props.address}</h3>
