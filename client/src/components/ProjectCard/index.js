@@ -5,7 +5,7 @@ import "./imgstyle.css";
 
 function ProjectCard(props) {
     return (
-        <div className="col-sm-8">
+        <div className="col" style={{float: 'right'}}>
             <div className="animated fadeInUp delay-1s" style={{cursor:"pointer"}}>
                 <img style={{height:"500px", width:"400px", paddingBottom:"125px"}} src={props.image} className="card-img-top" alt="image" />
 

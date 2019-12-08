@@ -1,6 +1,8 @@
 #image-container {
-    float: left;
+    /* float: left; */
     transform: translate(700px,100px);
+    /* position: absolute; */
+
 
 }
 
