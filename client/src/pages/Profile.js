@@ -141,16 +141,23 @@ class Profile extends Component {
 
 
                 <div className="right-side-container">
-                    <div id="image-container">
 
+                    <div id="image-container">
                         {this.state.appartments.map(appartment => {
                             return <ProjectCard image={appartment.image}
                                 title={appartment.title} open={this.open}
                             />
 
                         })}
-
                     </div>
+
+                    <div className="about-me">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem numquam adipisci commodi quisquam quos reiciendis repellat laboriosam rerum et, doloribus neque? Expedita, accusantium necessitatibus dicta provident debitis nesciunt deleniti quibusdam id similique ratione ipsa laudantium distinctio repudiandae ducimus error. Quod cupiditate similique quam recusandae ipsam ea voluptatem magnam quasi totam, harum itaque sunt neque officia ad explicabo assumenda eos modi repellendus odio tempora, non minus maxime pariatur temporibus. At voluptas suscipit ad ut optio et dignissimos earum cum delectus, facere, doloremque neque unde enim fuga itaque! Fugit impedit enim qui tempore nulla, suscipit reiciendis at aspernatur earum fuga consectetur.</p>
+                    </div>
+
+
+
                 </div>
 
 

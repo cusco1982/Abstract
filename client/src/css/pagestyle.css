@@ -1,9 +1,13 @@
-#image-container {
+.right-side-container {
     /* float: left; */
     transform: translate(600px,100px);
     /* position: absolute; */
     width: 1400px;
 
+}
+
+.about-me {
+    padding-left: 50px;
 }
 
 
