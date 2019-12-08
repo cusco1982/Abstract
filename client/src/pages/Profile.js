@@ -166,7 +166,7 @@ class Profile extends Component {
                 <div className="right-side-container">
 
                     <div id="image-container">
-                        <div className="image">
+                        <div className="container-fluid">
                             {this.state.appartments.map(appartment => {
                                 return <ProjectCard image={appartment.image}
                                     title={appartment.title} open={this.open}
@@ -176,6 +176,8 @@ class Profile extends Component {
                         </div>
 
 
+                        </div>
+                        
                         <Modal
                             size="lg"
                             show={this.state.showModal} onHide={this.close}
@@ -190,14 +192,13 @@ class Profile extends Component {
                                     </Modal.Title>
                                 })}
                             </Modal.Header>
-                            
+
                             <Modal.Body>
 
 
                             </Modal.Body>
                         </Modal>
 
-                    </div>
 
 
 
